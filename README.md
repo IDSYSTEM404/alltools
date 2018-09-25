@@ -9,7 +9,7 @@ https://goo.gl/YocYYt
 https://github.com/IDSYSTEM404/alltools
 
 # For Termux or Linux
-pkg install php
-git clone https://github.com/IDSYSTEM404/alltools
-cd alltools
-php runtools.php
+- pkg install php
+- git clone https://github.com/IDSYSTEM404/alltools
+- cd alltools
+- php runtools.php
