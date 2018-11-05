@@ -40,7 +40,7 @@ for ($x=1; $x<=$jumlah; $x++) {
 
 /** FUNCTION CURL **/
 $idsystem404 = curl_init();
-curl_setopt($idsystem404, CURLOPT_URL, "https://idsystem404.000webhostapp.com/api/api-autovisitor.php?url=".$url);
+curl_setopt($idsystem404, CURLOPT_URL, "https://api.petaniilmu.com/api/api-autovisitor.php?url=".$url);
 curl_setopt($idsystem404, CURLOPT_REFERER, "https://www.google.com");
 curl_setopt($idsystem404, CURLOPT_HEADER, 0);
 curl_setopt($idsystem404, CURLOPT_PROXY, $proxy);

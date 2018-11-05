@@ -19,7 +19,7 @@ function curl($url, $var = null) {
       curl_close($curl);
       return $result;
   }
-$curl = curl("https://idsystem404.000webhostapp.com/api/api-cekinfokelahiran.php?ttl=".$ttl);
+$curl = curl("https://api.petaniilmu.com/api/api-cekinfokelahiran.php?ttl=".$ttl);
 $cek = json_decode($curl, TRUE);
 $hasil = json_decode($curl);
 if ($cek['status'] == "success") {   

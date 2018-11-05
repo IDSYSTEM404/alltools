@@ -20,7 +20,7 @@ function curl($url, $var = null) {
       curl_close($curl);
       return $result;
   }
-$curl = file_get_contents("https://idsystem404.000webhostapp.com/api/api-cekemaillazada.php?email=".$email);
+$curl = file_get_contents("https://api.petaniilmu.com/api/api-cekemaillazada.php?email=".$email);
 $data = json_decode($curl);
 echo "\nHASILNYA ADALAH : ";
 echo $data->module->result;

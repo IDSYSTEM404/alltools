@@ -17,8 +17,8 @@ function curl($url, $var = null) {
       curl_close($curl);
       return $result;
   }
-$curl1 = curl("https://idsystem404.000webhostapp.com/api/api-cekip1.php?ip=".$ip);  
-$curl2 = curl("https://idsystem404.000webhostapp.com/api/api-cekip2.php?ip=".$ip);
+$curl1 = curl("https://api.petaniilmu.com/api/api-cekip1.php?ip=".$ip);  
+$curl2 = curl("https://api.petaniilmu.com/api/api-cekip2.php?ip=".$ip);
 $json1 = json_decode($curl1);
 $json2 = json_decode($curl2);
 print "\n\nIP : ".$json1->query;

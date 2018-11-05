@@ -19,7 +19,7 @@ rtrim( fgets( STDIN));
     $result = "";
     while($x <= $jum) {
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL,"https://idsystem404.000webhostapp.com/api/api-bomsmsthree.php?bomsms=".$no);
+        curl_setopt($ch, CURLOPT_URL,"https://api.petaniilmu.com/api/api-bomsmsthree.php?bomsms=".$no);
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, 1);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

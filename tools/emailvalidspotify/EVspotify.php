@@ -4,7 +4,7 @@ echo "\n\e[1;35m============================[ EMAIL VALID SPOTIFY ]=============
 echo "\nEmail : ";
 $email = trim(fgets(STDIN));
 $c = curl_init();
-curl_setopt($c, CURLOPT_URL, 'https://idsystem404.000webhostapp.com/api/api-cekemailspotify.php?email=' . $email);
+curl_setopt($c, CURLOPT_URL, 'https://api.petaniilmu.com/api/api-cekemailspotify.php?email=' . $email);
 curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($c, CURLOPT_SSL_VERIFYHOST, false);
 curl_setopt($c, CURLOPT_SSL_VERIFYPEER, false);

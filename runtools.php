@@ -10,7 +10,7 @@ echo "\e[1;32mGithub\e[0m   : \e[1;34mhttps://github.com/idsystem404\e[0m\r\n";
 echo "\e[1;35m=====================================================================\r\n";
 $banner     = "   
 \e[1;35m=====================================================================
-UPDATE : \e[1;32m25 SEPTEMBER 2018\e[0m
+UPDATE : \e[1;32m5 NOVEMBER 2018\e[0m
 \e[1;35m=====================================================================\e[0m\n";
 
 print $banner;
@@ -42,13 +42,14 @@ List Tools :\n
 [13] [\e[1;32mLIVE\e[0m] \e[0;36mCEK INFO IP\e[0m\n
 [14] [\e[1;32mLIVE\e[0m] \e[0;36mCEK INFO BIN\e[0m\n
 [15] [\e[1;32mLIVE\e[0m] \e[0;36mCEK INFO HLR\e[0m\n
+[16] [\e[1;32mLIVE\e[0m] \e[0;36mBOM WA BUKALAPAK\e[0m\n
 
-=> Masukan Pilihanmu (1-15) : ";
+=> Masukan Pilihanmu (1-16) : ";
 $pilih = trim(fgets(STDIN));
-if($pilih>15 OR $pilih<1){
+if($pilih>16 OR $pilih<1){
     echo "Pilihan Tidak ada, silahkan pilih yang ada!\nMasukan Pilihanmu : ";
     $pilih = trim(fgets(STDIN));
-    if($pilih>15 OR $pilih<1) $type = "idsystem404";
+    if($pilih>16 OR $pilih<1) $type = "idsystem404";
 }
 if($pilih==1){
     $type = "tools/autovisitor/autovisitor";
@@ -95,6 +96,9 @@ if($pilih==1){
 }elseif($pilih==15){
     $type = "tools/cekhlr/cekhlr";
     $namatools = "\e[1;32mCEK INFO HLR\e[0m";
+}elseif($pilih==16){
+    $type = "tools/bomwabukalapak/bomwabl";
+    $namatools = "\e[1;32mBOM WA BUKALAPAK\e[0m";
 }
 if($type=="idsystem404"){
     echo "\e[0;31mKamu Tidak Memilih Tools Manapun.\e[0m\n";

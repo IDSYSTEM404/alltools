@@ -24,7 +24,7 @@ $six = trim(fgets(STDIN, 1024));
   }
   // JSON DATA
     $bin = defineNUM($six);
-    $curl = curl("https://idsystem404.000webhostapp.com/api/api-cekinfobin.php?bin=".$bin);
+    $curl = curl("https://api.petaniilmu.com/api/api-cekinfobin.php?bin=".$bin);
     $json = json_decode($curl);
     $cardBrand = $json->brand ? $json->brand : "TIDAK ADA";
     $cardType = $json->type ? $json->type : "TIDAK ADA";
